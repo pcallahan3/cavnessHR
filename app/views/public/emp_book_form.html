@@ -1,0 +1,346 @@
+<div class="row dark_color alt_font_color_light">
+    <div class="col-md-12 alt_font_color_light dark_color header_style">
+        <h2 class="text-center">Company Contact Info</h2>
+    </div>
+</div>
+
+
+
+<form class="center-block" action="{{@BASE}}/submit_book_form"
+      method="POST" role="form" id="handbook_form" enctype="multipart/form-data">
+
+    <div class="row light_color alt_font_color_dark">
+        <br>
+        <div class="col-md-offset-1 col-md-4">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="company_name">Company Name: </label>
+                        <input type="text" class="form-control" id="company_name" name="company_name">
+                        <div class="alert alert-danger">
+                            <strong>Error: </strong><span id="company-name-error"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="company_contact">Company Contact:</label>
+                        <input type="text" class="form-control" id="company_contact" name="company_contact">
+                        <div class="alert alert-danger">
+                            <strong>Error: </strong><span id="company-contact-error"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="company_email">Contact Email:</label>
+                        <input type="email" class="form-control" id="company_email" name="company_email">
+                        <div class="alert alert-danger">
+                            <strong>Error: </strong><span id="contact-email-error"></span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+        </div>
+
+        <div class="col-md-offset-1 col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="company_logo">Upload Company Logo</label>
+                        <input class="form-control" name="company_logo" id="company_logo" type="file">
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="company_intro">Company Introduction:</label>
+                        <textarea class="form-control" rows="5" name="company_intro" id="company_intro"></textarea>
+                        <div class="alert alert-danger">
+                            <strong>Error: </strong><span id="company-intro-error"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="row dark_color alt_font_color_light">
+        <div class="col-md-12 alt_font_color_light dark_color header_style">
+            <h2 class="text-center">Employee Handbook Form</h2>
+        </div>
+    </div>
+
+    <div class="row light_color alt_font_color_dark">
+        <br>
+        <div class="col-md-offset-1 col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="work_hrs_days">What are your normal working hours/days:<div class="alt_font_color_orange font_size_xs">- Hours of operation and days open.</div></label>
+                        <input type="text" class="form-control" id="work_hrs_days" name="work_hrs_days">
+                        <div class="alert alert-danger">
+                            <strong>Error: </strong><span id="work-hours-days-error"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="payroll_start_stop">What day of the week and what time of day does the company
+                            define as the start of the 168-hour workweek for payroll purposes?:
+                        <div class="alt_font_color_orange font_size_xs">- For example, most companies run on
+                            a Monday-to-Sunday workweek that starts and ends at 12 a.m. on Monday morning.</div></label>
+                        <input type="text" class="form-control" id="payroll_start_stop" name="payroll_start_stop">
+                        <div class="alert alert-danger">
+                            <strong>Error: </strong><span id="payroll-start-stop-error"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <fieldset class="form-group" id="radio-display"> 
+                        <label for="payday">How often will you pay:</label>
+                        <div class="checkbox">
+                            <label><input type="radio" name="pay_freq" value="weekly" id="weekly"><span>Weekly</span></label>
+                        </div>
+
+                        <div class="checkbox">
+                            <label><input type="radio" name="pay_freq" value="bimonthly" id="bimonthly"><span>Bi-Monthly</span></label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="radio" name="pay_freq" value="monthly" id="monthly"><span>Monthly</span></label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="radio" name="pay_freq" value="every_other_week" id="every_other_week"><span>Every Other Week</span></label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="radio" name="pay_freq" value="other" id="other"><span>Other</span></label>
+                        </div>
+                        <div class="alert alert-danger">
+                            <strong>Error: </strong><span id="pay-freq-error"></span>
+                        </div>  
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <fieldset class="form-group" id="holidays">
+                            <label for="holidays">What paid holidays will you provide:</label>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="paid_holidays[]" value="New Years Day" id="new_years_day"><span>New Years Day</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="paid_holidays[]" value="Martin Luther King, Jr. Birthday" id="mlkjr_bday"><span>Martin Luther King, Jr. Birthday</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="paid_holidays[]" value="Memorial Day" id="mem_day"><span>Memorial Day</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="paid_holidays[]" value="Independence Day (4th of July)" id="july4_day"><span>Independence Day (4th of July)</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="paid_holidays[]" value="Labor Day" id="labor_day"><span>Labor Day</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="paid_holidays[]" value="Veterans Day" id="veteran_day"><span>Veterans Day</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="paid_holidays[]" value="Thanksgiving Day" id="thanks_day"><span>Thanksgiving Day</span></label>
+                            </div>
+                            <div class="checkbox">
+                                <label><input type="checkbox" name="paid_holidays[]" value="Christmas" id="christmas"><span>Christmas</span></label>
+                            </div>
+                            <div class="alert alert-danger">
+                                <strong>Error: </strong><span id="pay-holidays-error"></span>
+                            </div> 
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <fieldset class="form-group" id="unlimited">
+                        <label for="unlimited_vacation">Will you offer unlimited vacation time:</label>
+                        <div class="checkbox">
+                            <label><input type="radio" name="unlimited_vacation" value="yes" id="ul_vaca_yes"><span>Yes</span></label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="radio" name="unlimited_vacation" value="no" id="ul_vaca_no"><span>No</span></label>
+                        </div>
+                        <div class="alert alert-danger">
+                            <strong>Error: </strong><span id="unlimitted-vaca-error"></span>
+                        </div>  
+                    </fieldset>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <fieldset class="form-group" id="day_hour_vaca">
+                        <label for="day_hour_vaca">Will you provide paid time off by the day or by the hour:</label>
+                        <div class="checkbox">
+                            <label><input type="radio" name="day_hour_vaca" value="day" id="day_vaca"><span>Day</span></label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="radio" name="day_hour_vaca" value="hour" id="hour_vaca"><span>Hour</span></label>
+                        </div>
+                        <div class="alert alert-danger">
+                            <strong>Error: </strong><span id="day-hour-vaca-error"></span>
+                        </div>  
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-offset-1 col-md-4">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="vaca_sick_qty">How much vacation, sicktime will you provide:</label>
+                        <input type="text" class="form-control" id="vaca_sick_qty" name="vaca_sick_qty">
+                        <div class="alert alert-danger">
+                            <strong>Error: </strong><span id="vaca-sick-error"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="combine_pto">Will you separate vacation/sicktime or combine PTO:</label>
+                        <input type="text" class="form-control" id="combine_pto" name="combine_pto">
+                        <div class="alert alert-danger">
+                            <strong>Error: </strong><span id="combine-pto-error"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="vaca_approval">Procedures for approval/disapproval of vacation:</label>
+                        <input type="text" class="form-control" id="vaca_approval" name="vaca_approval">
+                        <div class="alert alert-danger">
+                            <strong>Error: </strong><span id="vaca-approval-error"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <fieldset class="form-group" id="maternity_leave">
+                        <label for="maternity_leave">Will you provide maternity leave:</label>
+                        <div class="checkbox">
+                            <label><input type="radio" name="maternity_leave" value="yes" id="mat_yes"><span>Yes</span></label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="radio" name="maternity_leave" value="no" id="mat_no"><span>No</span></label>
+                        </div>
+                        <div class="alert alert-danger">
+                            <strong>Error: </strong><span id="maternity-leave-error"></span>
+                        </div>  
+                    </fieldset>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-md-12">
+                    <fieldset class="form-group" id="patLeave">
+                        <label for="patLeave">Will you provide paternity leave:</label>
+                        <div class="checkbox">
+                            <label><input type="radio" name="paternity_leave" value="yes" id="pat_yes"><span>Yes</span></label>
+                        </div>
+                        <div class="checkbox">
+                            <label><input type="radio" name="paternity_leave" value="no" id="pat_no"><span>No</span></label>
+                        </div>
+                        <div class="alert alert-danger">
+                            <strong>Error: </strong><span id="paternity-leave-error"></span>
+                        </div>  
+                    </fieldset>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="maternity_leave_pay">How much maternity/paternity leave will you pay/provide:</label>
+                        <input type="text" class="form-control" id="maternity_leave_pay" name="maternity_leave_pay">
+                        <div class="alert alert-danger">
+                            <strong>Error: </strong><span id="maternity-pay-error"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="workers_comp">Does your company need to provide Workers Compensation:</label>
+                        <input type="text" class="form-control" id="workers_comp" name="workers_comp">
+                        <div class="alert alert-danger">
+                            <strong>Error: </strong><span id="workers-comp-error"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="bereavement_time">How many days will you provide for bereavement:</label>
+                        <input type="text" class="form-control" id="bereavement_time" name="bereavement_time">
+                        <div class="alert alert-danger">
+                            <strong>Error: </strong><span id="bereavement-error"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-group">
+                        <label for="other_comments">Closing Comments</label>
+                        <textarea rows="3" class="form-control"  name="other_comments" id="other_comments"></textarea>
+                        <div class="alert alert-danger">
+                            <strong>Error: </strong><span id="closing-comments-error"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row light_color alt_font_color_dark">
+        <br>
+        <div class="col-md-offset-1 col-md-9">
+            <button id="emp_book-submit" type="submit" class="btn btn-warning btn-block">Submit</button>
+            <br>
+            <br>
+        </div>
+
+    </div>
+
+</form>

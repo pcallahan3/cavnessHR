@@ -1,0 +1,6 @@
+{
+    "require": {
+        "bcosca/fatfree": "^3.6",
+        "sendgrid/sendgrid": "~6.0"
+    }
+}

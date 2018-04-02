@@ -1,0 +1,274 @@
+/*
+ * Author: Nate Hascup, Duck Nguyen
+ * Filename: admin.css
+ * Description: styling for admin home page
+ */
+
+/* ---------------------------------------------------
+    BODY - ACTIVE PROJECTS 
+----------------------------------------------------- */
+#active-div{
+	margin-bottom: 1em;
+}
+
+/* ---------------------------------------------------
+    CARD
+----------------------------------------------------- */
+.card-columns{
+	margin-top:-1em;
+}
+
+@media (min-width:34em) {
+    .card-deck > .card
+    {
+			width: 46%;
+			flex-wrap: wrap;
+			flex: initial;
+			display: block;
+			margin: 2em 0;
+    }
+}
+@media (max-width:34em) {
+    .card-deck > .card
+    {
+			width: 90%;
+			flex-wrap: wrap;
+			flex: initial;
+			display: block;
+			margin: 2em 0;
+    }
+}
+.card{
+	display: block;
+	border-bottom: 1px groove #DCAE10;
+	border-left: 1px groove #DCAE10;
+	border-right: 1px groove #DCAE10;
+	height:650px;
+	overflow: auto;
+}
+.card-1{
+	border:3px solid green;
+}
+.card .btn.btn-title{
+	background:#DCAE10;
+	color:white;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.card .btn.btn-title:hover{
+	cursor: default;
+}
+
+.card .d-inline-block {
+	background:#F7F5E6;
+	border-bottom: 1px groove #DCAE10;
+	padding-top:6px;
+	padding-bottom:4px;
+    width: 100%;
+}
+.card .d-inline-block a{
+	cursor:pointer;
+}
+.card .d-inline-block a .dropdown{
+	display: inline-block;
+}
+.card .d-inline-block a .btn {
+	display: inline-block;
+	width:55px;
+	height: 40px;
+	margin: 0.5em 0.2em;
+	/*background:#00303F;*/
+	background:#F7F5E6;
+	border:1px solid #52658F;
+}
+.card .d-inline-block a .btn.active{
+	color:white;
+}
+.card .d-inline-block a .btn:hover{
+	border:2px solid #ffc107;
+}
+.card .d-inline-block a .btn{
+	font-size: 1.2em;
+	/*color:#DCAE10;*/
+	color:#333A56;
+}
+
+/* CARD BODY START */
+.card .card-body{
+	margin-bottom: 2.5em;
+}
+.card .card-body .fa{
+	font-size:20px;
+	padding:5px;
+	border-radius: 50%;
+	border: 2px solid;
+}
+.card .card-body .fa-plus-square{
+	color:#007bff;
+}
+.card .card-body .fa-pencil-square{
+	color: #ffc107;
+}
+.card .card-body .fa-archive{
+	color: #17a2b8;
+}
+.card .card-body .fa-minus-square{
+	color: #dc3545;
+}
+
+/* CARD FOOTER START */
+.card .card-footer{
+	position: absolute;
+	bottom:0;
+	left:0;
+	right:0;
+}
+
+.card .nav-item {
+    background:#F7F5E6;
+}
+
+.card .nav-tabs {
+    background:#F7F5E6;
+}
+
+.nav-item:active {
+    background:white;
+}
+
+.card .nav-item:hover{
+	border-left:2px solid #ffc107;
+    border-right: 2px solid #ffc107;
+    border-top:2px solid #ffc107;
+	cursor:pointer;
+}
+
+.done-done{
+	color:green;
+}
+.not-done-done{
+	color:grey;
+}
+/* ---------------------------------------------------
+    CARD CONTENT - OVERVIEW 
+----------------------------------------------------- */
+.card-title,
+.main-options{
+	display: inline-block;
+}
+.main-options{
+	float:right;
+}
+.main-options p,
+.main-options a{
+	display: inline-block;
+}
+/* ---------------------------------------------------
+    CARD CONTENT - DOCUMENT 
+----------------------------------------------------- */
+
+
+/* ---------------------------------------------------
+    CARD CONTENT - CONSTRUCTION 
+----------------------------------------------------- */
+.construction-heading h5,
+.construction-heading p{
+	display: inline-block;
+}
+.construction-heading p{
+	float:right;
+}
+
+.construction-body img,
+.construction-body p{
+	display: inline-block;
+	float:left;
+}
+.construction-body img{
+	margin:3px;
+}
+.construction-body .construction-image{
+	height:160px;
+	width:140px;
+	margin:0 10px 10px 10px;
+}
+.photo-construction-preview{
+	height:150px;
+	width:140px;
+}
+/*
+ *Toggle slider code
+ */
+.switch p,
+.switch .cmn-toggle + label {
+   display: inline-block; 
+}
+.cmn-toggle {
+  position: absolute;
+  margin-left: -9999px;
+  visibility: hidden;
+}
+.cmn-toggle + label {
+  position: relative;
+  cursor: pointer;
+}
+input.cmn-toggle-round-flat + label {
+  padding: 2px;
+  width: 120px;
+  height: 60px;
+  background-color: #BB6C6C;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round-flat + label:before, input.cmn-toggle-round-flat + label:after {
+  display: block;
+  position: absolute;
+  content: "";
+}
+input.cmn-toggle-round-flat + label:before {
+  top: 2px;
+  left: 2px;
+  bottom: 2px;
+  right: 2px;
+  background-color: #fff;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  -ms-border-radius: 60px;
+  -o-border-radius: 60px;
+  border-radius: 60px;
+  -webkit-transition: background 0.4s;
+  -moz-transition: background 0.4s;
+  -o-transition: background 0.4s;
+  transition: background 0.4s;
+}
+input.cmn-toggle-round-flat + label:after {
+  top: 4px;
+  left: 4px;
+  bottom: 4px;
+  width: 52px;
+  background-color: #BB6C6C;
+  -webkit-border-radius: 52px;
+  -moz-border-radius: 52px;
+  -ms-border-radius: 52px;
+  -o-border-radius: 52px;
+  border-radius: 52px;
+  -webkit-transition: margin 0.4s, background 0.4s;
+  -moz-transition: margin 0.4s, background 0.4s;
+  -o-transition: margin 0.4s, background 0.4s;
+  transition: margin 0.4s, background 0.4s;
+}
+input.cmn-toggle-round-flat:checked + label {
+  background-color: #8ce196;
+}
+input.cmn-toggle-round-flat:checked + label:after {
+  margin-left: 60px;
+  background-color: #8ce196;
+}

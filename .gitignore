@@ -1,0 +1,9 @@
+/vendor
+/lib
+/tmp
+.well-known
+/classic
+composer.lock
+composer.phar
+error_log
+cache/

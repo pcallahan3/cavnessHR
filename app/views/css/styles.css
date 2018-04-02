@@ -1,0 +1,182 @@
+/*
+    Body CSS
+ */
+body
+{
+    font-family: 'Lato', sans-serif;
+
+
+}
+
+/*
+    Colors
+ */
+.dark_color
+{
+    background-color: #0b4770;
+}
+.orange_color
+{
+    background-color: #FF8C00;
+}
+.base_color
+{
+    background-color: #0071BC;
+}
+.light_color
+{
+    background-color: #FFFFFF;
+}
+
+/*
+    Banners & Misc
+ */
+.banner_back
+{
+    background-image: url("../images/button_banner.png"), url("../images/button_banner_left.png");
+    background-position: RIGHT bottom, LEFT bottom;
+    background-repeat: no-repeat, no-repeat;
+    background-color: #0071BC;
+    background-size: auto, auto;
+}
+
+.info_box
+{
+    border-radius: 8px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.banner_image_center
+{
+    margin: 0 auto;
+}
+
+.col_padding_zero_left
+{
+    padding-left: 0px;
+}
+.col_padding_zero_right
+{
+    padding-right: 0px;
+}
+
+.alt_font_color_dark
+{
+    color: #0b4770;
+}
+.alt_font_color_light
+{
+    color: #ffffff;
+}
+.alt_font_color_orange
+{
+    color: #FF8C00;
+}
+
+.alt_font_color_base
+{
+    color: #0071BC;
+}
+
+.form-area
+{
+    padding-bottom: 50px;
+}
+
+.font_size_xs
+{
+    font-size: x-small;
+}
+
+.font_size_sm
+{
+    font-size: small;
+}
+
+.font_size_med
+{
+    font-size: medium;
+}
+
+.font_size_lg
+{
+    font-size: larger;
+}
+
+.font_size_lgx
+{
+    font-size: xx-large;
+}
+
+.internal_padding
+{
+    padding: 15px;
+}
+
+hr
+{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-color: #FF8C00;
+    width: 90%;
+}
+
+#partners
+{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-color: black;
+    width: 90%;
+}
+
+.mobile_nav_padding
+{
+    padding: 5px;
+}
+
+.pannel_padding
+{
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+
+.header_style
+{
+    padding-bottom: 1px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.inner_padding
+{
+    padding-top: 10px;
+}
+
+.mailer_padding
+{
+    padding-left: 0px;
+}
+
+.list_style
+{
+    list-style-type: none;
+}
+
+.round_panel
+{
+    border-radius: 8px;
+}
+
+.logo_padding
+{
+    padding: 10px;
+}
+
+.tiny {
+    font-size: small;
+}
+
+.red {
+    color: red !important;
+}

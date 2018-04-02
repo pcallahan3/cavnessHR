@@ -1,0 +1,83 @@
+<!-- Row one -->
+<div class="row alt_font_color_light banner_back pannel_padding">
+
+    <div class="container-fluid justify-content-center ">
+        <div class="col-md-offset-1 col-md-6 hidden-xs hidden-sm">
+
+            <img class="img-responsive" src="{{@BASE}}/app/views/images/white_logo_banner.png" alt="cavnessHR: cavnessHR delivers value to Founders, new business owners and companies with less than 50 employees. ">
+        </div>
+        <div class="col-md-offset-1 col-md-3 col-sm-offset-3 col-sm-6 col-xs-12 dark_color info_box internal_padding">
+            <h2>How to get started?</h2>
+            <p><strong>cavnessHR</strong> will enable you and your team to focus on their new mission.</p>
+            <br>
+            <a href="{{@BASE}}/services" class="btn btn-warning center-block ">Learn more about the process</a>
+            <br>
+        </div>
+    </div>
+</div>
+
+<!-- Row two -->
+<div class="row light_color internal_padding alt_font_color_dark">
+
+    <div class="col-sm-offset-2 col-sm-8 col-md-offset-1 col-md-5 light_color">
+
+        <div class="alt_font_color_light base_color header_style"><h2 class="text-center inner_padding">Contact <strong>cavnessHR</strong></h2></div>
+
+        <br>
+        <p class="font_size_med"> <strong>cavnessHR</strong> delivers HR to Founders, new business
+            owners and companies with less than 50 employees until they bring
+            in their own dedicated HR. cavnessHR adds value by taking care of
+            the HR business function while continuing to maintain their own values.</p>
+        <hr>
+        <br>
+
+        <div class="form-area">
+            <form action="{{@BASE}}/send_contact" method="post">
+
+                <div class="form-group">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="mobile" name="mobile" placeholder="Mobile Number" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control"  name="message" id="message" placeholder="Message" rows="5" ></textarea>
+                </div>
+
+                <div class="form-group">
+                    <button type="submit" class="btn btn-warning btn-block">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="col-sm-offset-1 col-sm-4 col-md-offset-1 col-md-4">
+
+        <div class="visible-lg hidden-md hidden-sm hidden-xs">
+            <br><br><br>
+        </div>
+
+        <div class="row">
+         <div class="col-md-12 col-sm-6 col-xs-offset-3 col-xs-9">
+             <h3><strong>Founder</strong></h3>
+
+             <h4>Jason Cavness</h4>
+             <p><a href="mailto:contact@cavnesshr.com" target="_top">contact@cavnesshr.com</a></p>
+         </div>
+
+         <div class="col-md-12 col-sm-6 col-xs-offset-3 col-xs-9">
+             <h3><strong>Partners in HR</strong></h3>
+             <br>
+             <p><a href="https://www.bamboohr.com/" target="_blank"><img src="https://www.bamboohr.com/img/svg/BambooHRLogo.svg" alt="BambooHR - Easy-to-Use HR Software"></a></p>
+             <p> <a href="https://www.zanebenefits.com/" target="_blank"><img src="{{@BASE}}/app/views/images/zane_benefits.png" class="img-responsive" alt="Zane Benefits - A People Company"></a>
+             <p><a href="https://justworks.com/" target="_blank"><img src="https://jwassets.justworks.com/assets/logos/justworks-logo-ee2eb9e6c69a93ce971846a89e67446f2f0d161d887f2ca6a4c9f7bb1fc71658.svg" alt="justworks."></a></p>
+         </div>
+        </div>
+    </div>
+</div>

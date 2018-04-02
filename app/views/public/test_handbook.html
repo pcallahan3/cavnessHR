@@ -1,0 +1,35 @@
+<script src="{{@BASE}}/js/validate_handbook.js"></script>
+<div class="row light_color">
+    <div class="container-fluid">
+        <div class="col-sm-offset-4 col-sm-4">
+            <br>
+            <div class="alt_font_color_light dark_color header_style"><h2 class="text-center">Employee Handbook
+                Form</h2></div>
+            <div class="form-area">
+                <form action="{{@BASE}}/submit_book_form" id="handbook_form" method="post">
+
+                    <div class="form-group">
+                        <div id="intro-error" style="color: #550000">
+                                <h1></h1>
+                            </div>
+                        <label for="intro">Company Introduction
+                        </label>
+
+                        <textarea class="form-control" name="intro" id="intro"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div id="hours-error" style="color: #550000">
+                            <h1></h1>
+                        </div>
+                        <label for="work_hrs_days">What are your normal working hours/days:</label>
+                        <input type="text" class="form-control" id="work_hrs_days" name="work_hrs_days">
+                    </div>
+
+                    <div class="form-group">
+                        <button class="btn btn-warning col-lg-offset-4" onclick="validateHandbook()">Submit Handbook</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

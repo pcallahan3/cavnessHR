@@ -1,0 +1,65 @@
+<div class="row dark_color alt_font_color_light">
+    <div class="col-md-offset-1 col-md-4">
+        <h1>{{@handbook->company_name}}</h1>
+        <h2>{{@handbook->company_contact}}</h2>
+        <h3>{{@handbook->company_email}}</h3>
+        <hr>
+        <h3>Intro</h3>
+        <p>{{@handbook->company_intro}}</p>
+    </div>
+    <div class="col-md-offset-1 col-md-4 logo_padding">
+        <check if="{{ @handbook->logo != '' }}">
+                <div>
+                    <true>
+                        <img class="img-fluid" src="{{@BASE}}/{{@handbook->logo}}" alt="">
+                    </true>
+                </div>
+        </check>
+    </div>
+</div>
+
+<div class="row light_color alt_font_color_dark">
+    <div class="col-md-offset-1 col-md-4">
+        <h3>Work Hours</h3>
+        <p>{{@handbook->work_hrs_days}}</p>
+
+        <h3>Pay Frequency</h3>
+        <p>{{@handbook->pay_freq}}</p>
+
+        <h3>Paid Holidays</h3>
+        <p>{{@handbook->paid_holidays}}</p>
+
+        <h3>Number of Sick Days</h3>
+        <p>{{@handbook->vaca_sick_qty}}</p>
+
+        <h3>Paid Time Off</h3>
+        <p>{{@handbook->combine_pto}}</p>
+
+        <h3>Vacation Approval</h3>
+        <p>{{@handbook->vaca_approval}}</p>
+    </div>
+    <div class="col-md-offset-1 col-md-4">
+        <h3>Maternity Leave Time</h3>
+        <p>{{@handbook->maternity_leave}}</p>
+
+        <h3>Paternity Leave Time</h3>
+        <p>{{@handbook->paternity_leave}}</p>
+
+        <h3>Maternity Leave Pay</h3>
+        <p>{{@handbook->maternity_leave_pay}}</p>
+
+        <h3>Workers Compensation</h3>
+        <p>{{@handbook->workers_comp}}</p>
+
+        <h3>Bereavement</h3>
+        <p>{{@handbook->bereavement_time}}</p>
+
+        <h3>Closing Comments</h3>
+        <p>{{@handbook->other_comments}}</p>
+
+    </div>
+    <hr>
+    <div class="col-md-offset-1 col-md-2">
+    <p><a href="{{@BASE}}/delete/{{@handbook->id}}" class="btn btn-warning center-block">Delete Client</a></p>
+    </div>
+</div>

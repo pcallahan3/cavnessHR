@@ -1,0 +1,73 @@
+/*
+    Nav CSS
+ */
+.navbar-default
+{
+    background-color: #FFFFFF;
+    margin-bottom: 0;
+}
+.navbar-default .navbar-nav>li>a
+{
+    color: #0b4770;
+}
+ul.nav a:hover
+{
+    color: #FFFFFF !important;
+    background: #0b4770 !important;
+    border-radius: 5px;
+}
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+
+    overflow: hidden;
+    border: 1px solid #FFFFFF;
+    background-color: #FFFFFF;
+}
+.logo_margin
+{
+    margin-right: 25px;
+}
+
+.nav_font
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: -15px;
+}
+
+.nav_image_size
+{
+    max-width:100%;
+    max-height:100%;
+}
+
+/*
+    Footer CSS
+ */
+i
+{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #FFFFFF;
+}
+
+html
+{
+    position: relative;
+    min-height: 100%;
+}
+body
+{
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+.footer
+{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 60px;
+}

@@ -1,0 +1,26 @@
+<div class="row alt_font_color_dark light_color">
+    <div class="col-md-offset-1 col-md-3 light_color font_size_lg">
+        <p><h2 class="text-center">Clients</h2></p>
+        <hr>
+        <br>
+
+
+        <repeat group="{{ @clients }}" value="{{ @client }}">
+            <div><p><a href="{{@BASE}}/user/{{@client->id}}" ><span class="font_size_lg"><strong>{{ @client->company_contact }}</strong></span></a> - {{ @client->company_name }}</p></div>
+
+        </repeat>
+        <br>
+    </div>
+
+    <div class="col-md-offset-1 col-md-3">
+        <p><h2 class="text-center inner_padding">Admin Options</h2></p>
+        <hr>
+        <br>
+
+        <p><a href="{{@BASE}}/logout" class="btn btn-warning center-block">Log out</a></p>
+        <!--<a href="{{@BASE}}/new_user" class="btn btn-warning center-block">New User</a>-->
+        <br><br>
+    </div>
+
+
+</div>

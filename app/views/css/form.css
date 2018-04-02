@@ -1,0 +1,8 @@
+.hiddenPanel
+{
+    display: none !important;
+}
+.visiblePanel
+{
+    display: block !important;
+}
